@@ -178,7 +178,7 @@ const Tasks = () => {
       {/* Search */}
       <div className="mb-3 animate-fade-up stagger-1">
         <input
-          className="w-full input"
+          className="w-full field"
           placeholder="Search by title, description or assignee..."
           value={search}
           onChange={e => setSearch(e.target.value)}
