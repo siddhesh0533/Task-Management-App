@@ -31,7 +31,7 @@ A full-stack MERN application where managers can assign tasks to employees, empl
 
 ```
 Task-Management-App/
-├── taskapp-server/         # Express REST API
+├── TaskApp-Server/         # Express REST API
 │   ├── config/             # MongoDB connection
 │   ├── controllers/        # Business logic
 │   ├── middleware/         # Auth, role guard, validation
@@ -40,7 +40,7 @@ Task-Management-App/
 │   ├── validators/         # express-validator rules
 │   └── index.js            # Entry point
 │
-└── taskapp-client/         # React SPA
+└── TaskApp-Client/         # React SPA
     └── src/
         ├── api/            # Axios instance
         ├── components/     # Reusable UI components
@@ -59,18 +59,18 @@ Task-Management-App/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/task-management-app.git
-cd task-management-app
+git clone https://github.com/siddhesh0533/Task-Management-App.git
+cd Task-Management-App
 ```
 
 ### 2. Backend setup
 
 ```bash
-cd taskapp-server
+cd TaskApp-Server
 npm install
 ```
 
-Create a `.env` file in `taskapp-server/`:
+Create a `.env` file in `TaskApp-Server/`:
 
 ```env
 PORT=5000
@@ -91,11 +91,11 @@ Server runs at `http://localhost:5000`
 ### 3. Frontend setup
 
 ```bash
-cd taskapp-client
+cd TaskApp-Client
 npm install
 ```
 
-Create a `.env` file in `taskapp-client/`:
+Create a `.env` file in `TaskApp-Client/`:
 
 ```env
 VITE_API_URL=http://localhost:5000/api
@@ -142,14 +142,14 @@ Register accounts manually via the app. Use the role selector on the Register pa
 
 1. Push code to GitHub
 2. Create a new **Web Service** on [render.com](https://render.com)
-3. Connect your GitHub repo, set root directory to `taskapp-server`
+3. Connect your GitHub repo, set root directory to `TaskApp-Server`
 4. Set environment variables in Render dashboard (same as `.env`)
 5. Build command: `npm install` · Start command: `npm start`
 
 ### Frontend → Vercel
 
 1. Create a new project on [vercel.com](https://vercel.com)
-2. Connect your GitHub repo, set root directory to `taskapp-client`
+2. Connect your GitHub repo, set root directory to `TaskApp-Client`
 3. Add environment variable: `VITE_API_URL=https://your-render-url.onrender.com/api`
 4. Deploy
 
@@ -157,4 +157,4 @@ Register accounts manually via the app. Use the role selector on the Register pa
 
 ## Author
 
-Siddhesh Patil — [GitHub](https://github.com/your-username)
+Siddhesh Patil — [GitHub](https://github.com/siddhesh0533)
