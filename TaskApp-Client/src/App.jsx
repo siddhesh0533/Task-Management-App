@@ -15,9 +15,14 @@ import NotFound   from './pages/NotFound';
 
 /* Authenticated shell with sidebar */
 const AppShell = ({ children }) => (
-  <div className="app-shell">
+  <div className="flex min-h-screen bg-surface-950">
     <Sidebar />
-    <main className="min-h-screen overflow-y-auto pt-14 lg:pt-0">
+    {/*
+      On mobile:  full width, push content below the fixed top bar (pt-14)
+      On desktop: take remaining space beside the sticky sidebar (lg:pt-0)
+      min-w-0 prevents flex children from overflowing on narrow viewports
+    */}
+    <main className="flex-1 min-w-0 pt-14 lg:pt-0 overflow-y-auto">
       {children}
     </main>
   </div>
@@ -50,8 +55,8 @@ function App() {
 
           {/* Protected — any authenticated user */}
           <Route element={<ProtectedRoute />}>
-            <Route path="/" element={<AppShell><Dashboard /></AppShell>} />
-            <Route path="/tasks" element={<AppShell><Tasks /></AppShell>} />
+            <Route path="/"          element={<AppShell><Dashboard /></AppShell>} />
+            <Route path="/tasks"     element={<AppShell><Tasks /></AppShell>} />
             <Route path="/tasks/:id" element={<AppShell><TaskDetail /></AppShell>} />
           </Route>
 
