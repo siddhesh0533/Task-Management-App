@@ -52,7 +52,7 @@ const Register = () => {
             </svg>
           </div>
           <span style={{ fontFamily: 'Syne, sans-serif' }}
-            className="font-bold text-lg text-surface-50">Taskr</span>
+            className="font-bold text-lg text-surface-50">TaskApp</span>
         </div>
 
         <div className="mb-8">
@@ -60,7 +60,7 @@ const Register = () => {
             className="text-2xl font-bold text-surface-50">
             Create account
           </h1>
-          <p className="text-surface-400 text-sm mt-1">Get started with Taskr</p>
+          <p className="text-surface-400 text-sm mt-1">Get started with TaskApp</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">

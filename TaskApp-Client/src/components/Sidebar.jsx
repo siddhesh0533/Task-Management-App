@@ -66,7 +66,7 @@ const Sidebar = () => {
           </div>
           <span style={{ fontFamily: 'Syne, sans-serif' }}
             className="font-bold text-surface-50 text-base tracking-tight">
-            Taskr
+            TaskApp
           </span>
         </div>
       </div>
