@@ -17,7 +17,7 @@ import NotFound   from './pages/NotFound';
 const AppShell = ({ children }) => (
   <div className="app-shell">
     <Sidebar />
-    <main className="min-h-screen overflow-y-auto">
+    <main className="min-h-screen overflow-y-auto pt-14 lg:pt-0">
       {children}
     </main>
   </div>
