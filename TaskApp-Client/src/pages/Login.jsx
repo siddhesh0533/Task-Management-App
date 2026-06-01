@@ -97,7 +97,7 @@ const Login = () => {
               </svg>
             </div>
             <span style={{ fontFamily: 'Syne, sans-serif' }}
-              className="font-bold text-lg text-surface-50">Taskr</span>
+              className="font-bold text-lg text-surface-50">TaskApp</span>
           </div>
 
           <div className="mb-8">
